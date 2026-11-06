@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Meu Espaço Pessoal</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-color: #38bdf8;
+            --accent-hover: #0ea5e9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-color), #818cf8);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            color: #fff;
+            box-shadow: 0 4px 14px rgba(56, 189, 248, 0.4);
+        }
+
+        h1 {
+            font-size: 26px;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 15px;
+            margin-bottom: 24px;
+        }
+
+        .bio-box {
+            background-color: rgba(15, 23, 42, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 24px;
+            text-align: left;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .bio-box h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: var(--accent-color);
+        }
+
+        .bio-box p {
+            color: var(--text-muted);
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            font-weight: 600;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="avatar">✨</div>
+        <h1>Olá! Bem-vindo(a)</h1>
+        <p class="subtitle">Este é o teu espaço digital personalizado.</p>
+        
+        <div class="bio-box">
+            <h3>💡 O que podes fazer aqui?</h3>
+            <p>Este ficheiro serve como ponto de partida limpo e moderno. Podes abri-lo num editor de código (como o VS Code) para alterar o texto, as cores ou adicionar as tuas secções favoritas.</p>
+        </div>
+
+        <a href="#" class="btn" onclick="alert('Clica em mim para adicionar interatividade!'); return false;">Explorar Ideias</a>
+    </div>
+
+</body>
+</html>
